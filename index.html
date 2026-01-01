@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Floating background elements -->
+    <div class="floating-elem floating-1"></div>
+    <div class="floating-elem floating-2"></div>
+
+    <!-- Navigation -->
+    <header class="nav">
+      <nav class="navbar container">
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a class="cv-btn" href="Hala_Saber_CV[1].pdf" target="_blank">
+              <i class="fa-solid fa-download"></i>
+              Download CV
+            </a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="logo">
+          <i class="fas fa-code"></i>
+          <span>Portfolio</span>
+        </div>
+
+        <!-- Mobile menu toggle -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <header id="about">
+      <div class="hero container animate">
+        <div class="profile-pic-container">
+          <img src="./Images/hala'.png" alt="Hala Saber" class="profile-pic" />
+        </div>
+        <h1>Welcome</h1>
+        <h2>Hala Saber Mohamed</h2>
+        <p>
+          A professional Web and Graphic Designer specializing in creating
+          exceptional user experiences and creative designs. Skilled in HTML,
+          CSS, JS, and tools like Photoshop. Passionate about building
+          beautiful, functional digital experiences that make an impact.
+        </p>
+      </div>
+    </header>
+
+    <!-- Interactive Skills Wheel Section -->
+    <section id="skills-wheel">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Tech Expertise</h2>
+          <p class="contact-text">
+            Interactive visualization of my skill levels
+          </p>
+        </div>
+
+        <div class="skills-wheel-container">
+          <div class="wheel-wrapper">
+            <!-- The Wheel -->
+            <div class="skills-wheel">
+              <div class="wheel-center">
+                <div class="wheel-text">
+                  <span class="skill-percentage" id="current-skill-percentage"
+                    >85%</span
+                  >
+                  <span class="skill-name" id="current-skill-name"
+                    >HTML/CSS</span
+                  >
+                </div>
+              </div>
+
+              <!-- Skills around the wheel -->
+              <!-- المهارات الأساسية -->
+              <div
+                class="wheel-skill"
+                data-skill="HTML/CSS"
+                data-percent="85"
+                style="--angle: 0deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">HTML/CSS</span>
+              </div>
+
+              <div
+                class="wheel-skill"
+                data-skill="JavaScript"
+                data-percent="70"
+                style="--angle: 45deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">JavaScript</span>
+              </div>
+
+              <div
+                class="wheel-skill"
+                data-skill="React"
+                data-percent="60"
+                style="--angle: 90deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">React</span>
+              </div>
+
+              <div
+                class="wheel-skill"
+                data-skill="SQL"
+                data-percent="75"
+                style="--angle: 135deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">SQL</span>
+              </div>
+
+              <div
+                class="wheel-skill"
+                data-skill="C++"
+                data-percent="65"
+                style="--angle: 180deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">C++</span>
+              </div>
+
+              <!-- المهارات التكميلية -->
+              <div
+                class="wheel-skill"
+                data-skill="Graphic Design"
+                data-percent="90"
+                style="--angle: 225deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">Graphic Design</span>
+              </div>
+
+              <div
+                class="wheel-skill"
+                data-skill="Responsive Design"
+                data-percent="88"
+                style="--angle: 270deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">Responsive</span>
+              </div>
+
+              <div
+                class="wheel-skill"
+                data-skill="UI/UX"
+                data-percent="78"
+                style="--angle: 315deg"
+              >
+                <div class="skill-dot"></div>
+                <span class="skill-label">UI/UX</span>
+              </div>
+            </div>
+
+            <!-- Skill Details Panel -->
+            <div class="skill-details">
+              <h3 id="detail-skill-name">HTML/CSS</h3>
+              <div class="skill-progress">
+                <div class="progress-bar">
+                  <div
+                    class="progress-fill"
+                    id="progress-fill"
+                    style="width: 85%"
+                  ></div>
+                </div>
+                <span class="progress-text" id="detail-skill-percent">85%</span>
+              </div>
+              <p id="detail-skill-description" class="text-black">
+                Advanced expertise in creating responsive, accessible web
+                interfaces with modern CSS techniques including Flexbox, Grid,
+                and animations.
+              </p>
+              <div class="skill-tags">
+                <span>Flexbox</span>
+                <span>Grid</span>
+                <span>Animations</span>
+                <span>Accessibility</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Skills</h2>
+          <p class="contact-text">Technical expertise and creative abilities</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill animate delay-1">
+            <h3>HTML & CSS</h3>
+            <p>
+              Advanced expertise in creating responsive, accessible web
+              interfaces with modern CSS techniques.
+            </p>
+          </div>
+          <div class="skill animate delay-2">
+            <h3>JavaScript</h3>
+            <p>
+              Intermediate skills in building interactive web applications and
+              dynamic user experiences.
+            </p>
+          </div>
+          <div class="skill animate delay-1">
+            <h3>Graphic Design</h3>
+            <p>
+              Professional design skills using Photoshop, Illustrator, and other
+              creative tools.
+            </p>
+          </div>
+          <div class="skill animate delay-2">
+            <h3>Responsive Design</h3>
+            <p>
+              Creating websites that work perfectly on all devices and screen
+              sizes.
+            </p>
+          </div>
+          <div class="skill animate delay-1">
+            <h3>Microsoft Excel</h3>
+            <p>
+              Advanced skills in data manipulation, formulas, pivot tables, and
+              data visualization
+            </p>
+          </div>
+          <div class="skill animate delay-1">
+            <h3>Data Entry & Verification</h3>
+            <p>
+              Proficient in accurate and efficient data entry with attention to
+              detail
+            </p>
+          </div>
+          <div class="skill animate delay-1">
+            <h3>Digital Record Management:</h3>
+            <p>Systematic organization of electronic files and documents</p>
+          </div>
+          <div class="skill animate delay-2">
+            <h3>Tailwind CSS</h3>
+            <p>
+              Utilizing utility-first CSS framework for rapid UI development.
+            </p>
+          </div>
+          <div class="skill animate delay-2">
+            <h3>Professional Email Communication:</h3>
+            <p>Writing clear, concise business emails</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Projects</h2>
+          <p class="contact-text">A selection of my recent work</p>
+        </div>
+        <div class="work-grid" id="projects-container">
+          <div class="work-item animate delay-1">
+            <a
+              href="https://3592195halasaber.github.io/SimpleForm/"
+              target="_blank"
+            >
+              <img src="./images/image.png" alt="E-commerce Website" />
+              <div class="work-overlay">
+                <h3>Simple Form</h3>
+                <p>
+                  A simple and responsive form application built using HTML,
+                  CSS, and JavaScript. It includes client-side validation and a
+                  clean, user-friendly interface.
+                </p>
+                <div class="project-tags">
+                  <span>HTML/CSS</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="work-item animate delay-2">
+            <a href="https://3592195halasaber.github.io/ViteTest2/">
+              <img src="../images/work.png" alt="Portfolio Design" />
+              <div class="work-overlay">
+                <h3>e-commerce</h3>
+                <p>
+                  Modern portfolio website with smooth animations and
+                  interactive elements.
+                </p>
+                <div class="project-tags">
+                  <span>HTML/CSS</span>
+                  <span>JavaScript</span>
+                  <span>GSAP</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="work-item animate delay-3">
+            <a href="https://3592195halasaber.github.io/games/">
+              <img src="../images/games.png" alt="Dashboard UI" />
+              <div class="work-overlay">
+                <h3>Games Website</h3>
+                <p>
+                  A fast-paced free-to-play online game that combines action,
+                  strategy, and immersive gameplay. Play solo or with friends
+                  and explore exciting worlds filled with challenges.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Chart.js</span>
+                  <span>Tailwind</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-section animate">
+          <h2 class="section-title">Contact Me</h2>
+          <p class="contact-text">
+            Feel free to reach out for collaboration, project inquiries, or just
+            to say hello!
+          </p>
+
+          <div class="contact-info">
+            <p><strong>Email:</strong> halasabermhamed11@gmail.com</p>
+            <p><strong>Phone:</strong> +20 1142684290</p>
+            <p><strong>Location:</strong> Alexandria, Egypt</p>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/hala-saber-b02350247"
+              target="_blank"
+              class="social linkedin"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/3592195halasaber"
+              target="_blank"
+              class="social github"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="mailto:halasabermhamed11@gmail.com"
+              class="social mail"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://behance.net/halasaber"
+              target="_blank"
+              class="social behance"
+              aria-label="Behance"
+            >
+              <i class="fab fa-behance"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Hala Saber. All Rights Reserved.</p>
+        <p>
+          Designed with
+          <i class="fas fa-heart" style="color: var(--accent)"></i> and code
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>
